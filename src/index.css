@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 228 12% 8%;
+    --foreground: 210 20% 92%;
+
+    --card: 228 12% 12%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 228 12% 12%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 225 73% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 228 12% 18%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 228 10% 16%;
+    --muted-foreground: 215 12% 55%;
+
+    --accent: 225 73% 57%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 228 12% 20%;
+    --input: 228 12% 20%;
+    --ring: 225 73% 57%;
+
+    --radius: 0.75rem;
+
+    --glow-primary: 0 0 60px hsl(225 73% 57% / 0.15);
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(225 73% 57% / 0.15), transparent);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/30 backdrop-blur-2xl border border-border/30 rounded-2xl;
+  }
+  .glass-nav {
+    @apply bg-card/40 backdrop-blur-2xl border border-border/30 rounded-full;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-[hsl(260,70%,65%)];
+  }
+  .glow-border {
+    @apply border border-primary/20 shadow-[0_0_30px_hsl(225,73%,57%,0.1)];
+  }
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .badge-pill {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/60 bg-secondary/50 text-secondary-foreground text-sm font-mono tracking-wide;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-glow-pulse {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
