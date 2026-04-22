@@ -34,9 +34,9 @@ const ContactSection = () => {
             <div className="flex gap-4">
               {[
                 { icon: Github, href: "https://github.com/gentechai" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/paras-sonare-b7a7722b0/" },
-                { icon: Phone, href: "tel:+918518057069" },
-                { icon: Mail, href: "mailto:psonare56@gmail.com" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/sohailpathan975/" },
+                { icon: Phone, href: "tel:+919981716540" },
+                { icon: Mail, href: "mailto:sohailpathan975@gmail.com" },
               ].map(({ icon: Icon, href }) => (
                 <a
                   key={href}
