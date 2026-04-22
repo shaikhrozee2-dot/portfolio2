@@ -33,7 +33,6 @@ const ContactSection = () => {
 
             <div className="flex gap-4">
               {[
-                { icon: Github, href: "https://github.com/gentechai" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/sohailpathan975/" },
                 { icon: Phone, href: "tel:+919981716540" },
                 { icon: Mail, href: "mailto:sohailpathan975@gmail.com" },
