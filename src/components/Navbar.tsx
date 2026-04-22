@@ -37,7 +37,7 @@ const Navbar = () => {
           scrolled ? "shadow-lg shadow-primary/5" : ""
         }`}
       >
-        <span className="px-4 font-bold text-lg text-foreground tracking-tight">SP</span>
+        <span className="px-4 font-bold text-lg text-foreground tracking-tight">RS</span>
         <div className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
             <button

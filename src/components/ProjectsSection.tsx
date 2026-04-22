@@ -1,92 +1,78 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight, Sparkles, ExternalLink } from "lucide-react";
-import ragProject from "@/assets/ramos-law.webp";
-import baizelProject from "@/assets/baizel-project.png";
-import naibleProject from "@/assets/rss-automation.jpg";
-import autocityProject from "@/assets/fastguard.jpg";
+import ragProject from "@/assets/img1.jpeg";
+import baizelProject from "@/assets/img2.jpeg";
+import naibleProject from "@/assets/img3.jpeg";
 
 const projects = [
-  {
-  title: "Ramos Law AI Document Processing",
-  tagline: "Automated legal and insurance document intelligence pipeline",
+{
+  title: "Your Guide to Scalable Growth",
+  tagline: "Helping businesses grow with modern web solutions",
   description:
-    "Built an AI-powered backend pipeline for Ramos Law to process uploaded ZIP files containing nested folders of legal and insurance documents. The system extracts text from PDFs, Word, Excel, and image-based files using OCR, performs semantic keyword search, and sends relevant content to LLMs for structured.",
+    "Designed and developed a modern, scalable web platform focused on helping businesses establish a strong digital presence. The project includes responsive UI design, optimized performance, and user-focused layouts to improve engagement and conversion rates. Built with clean code practices and reusable components for easy scalability and future enhancements.",
+  
   features: [
-    "ZIP upload processing with nested folder batch handling",
-    "Multi-format text extraction (PDF, Word, Excel, images)",
-    "OCR pipeline for scanned and image-based PDFs",
-    "Semantic keyword search with LLM-based structured outputs",
-    "Database storage for further legal and insurance modeling",
+    "Fully responsive and mobile-friendly design",
+    "Modern UI/UX focused on user engagement",
+    "Fast loading and performance optimization",
+    "Reusable and scalable component structure",
+    "Cross-browser compatibility"
   ],
-  stack: ["Python", "FastAPI", "OCR", "LLMs", "Database"],
+
+  stack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+
   color: "from-primary to-[hsl(12,80%,55%)]",
   image: ragProject,
+},
+{
+  title: "Healthcare Website",
+  tagline: "Modern healthcare platform for better patient experience",
+  
+  description:
+    "Designed and developed a responsive healthcare website focused on improving patient experience and accessibility. The platform provides easy navigation for services, doctor information, appointment booking, and health-related resources. Built with a clean and user-friendly interface to ensure trust, usability, and seamless interaction across all devices.",
+  
+  features: [
+    "Responsive design for mobile, tablet, and desktop",
+    "Doctor listing and service information sections",
+    "Appointment booking UI for patients",
+    "Clean and user-friendly healthcare interface",
+    "Fast loading and optimized performance"
+  ],
+
+  stack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+
+  color: "from-[hsl(180,70%,40%)] to-[hsl(160,60%,50%)]",
+  image: baizelProject,
   
 },
   {
-    title: "Baizel – AI Site Selection Tool",
-    tagline: "Agentic AI platform for real estate parcel search & analysis",
-    description: "A fully automated platform for brokers and land developers to search parcels and perform complex analyses using Agentic AI. Reduces manual site selection from weeks to seconds with 95%+ accuracy, integrating Regrid, Dataplor, and Shovel data providers.",
-    features: [
-      "AWS Glue, PySpark with Sedona for terabyte-scale data ingestion",
-      "Agentic AI with OpenAI, Anthropic, Gemini & AWS Bedrock",
-      "PostGIS, pgvector, pg_trgm with optimized partitioning & indexes",
-      "React + Mapbox with clustering, custom tiles & geoJSON tileservers",
-    ],
-    stack: ["FastAPI", "PostgreSQL", "AWS", "React", "Mapbox", "OpenAI"],
-    color: "from-[hsl(220,80%,40%)] to-[hsl(240,70%,50%)]",
-    image: baizelProject,
-    link: "https://app.baizel.ai/",
-  },
-  {
-  title: "RSS Feed Automation",
-  tagline: "AI-driven social media content generation with automated publishing",
+  title: "Free Movies Platform",
+  tagline: "Stream thousands of movies and TV channels for free",
+  
   description:
-    "FastAPI-based automation system that ingests RSS feed content and generates engaging LinkedIn and Twitter posts using LLMs. Integrates automated scheduling workflows for predefined publishing times, enabling consistent multi-platform posting with reduced manual effort.",
+    "Designed and developed a modern streaming platform UI that allows users to explore and watch thousands of free movies and TV channels. The project focuses on a clean layout, smooth navigation, and engaging user experience with categorized content, featured banners, and responsive design for all devices.",
+  
   features: [
-    "RSS feed ingestion and content extraction",
-    "LLM-powered LinkedIn & Twitter post generation",
-    "APScheduler-based scheduled publishing",
-    "OAuth2.0 social platform integration",
+    "Modern homepage with featured movie banners",
+    "Category-based movie browsing (Movies, Series, TV)",
+    "Responsive design for mobile, tablet, and desktop",
+    "Clean UI with smooth navigation and hover effects",
+    "Optimized layout for fast loading and user engagement"
   ],
+
   stack: [
-    "Python",
-    "LangChain",
-    "OpenAI",
-    "Gemini",
-    "Hugging Face",
-    "APScheduler",
-    "REST API",
+    "HTML",
+    "CSS",
+    "JavaScript",
+   
+    "Bootstrap"
   ],
-  color: "from-[hsl(30,90%,55%)] to-[hsl(350,80%,55%)]",
+
+  color: "from-[hsl(180,80%,40%)] to-[hsl(220,70%,50%)]",
   image: naibleProject,
-  link: "https://automationrss-608500751622.europe-west1.run.app/",
-},
-  {
-  title: "Guard Service Automation",
-  tagline: "End-to-end quotation and invoicing workflow automation",
-  description:
-    "Built a full-stack automation system for FastGuard Security Services to streamline customer onboarding, dynamic quotation generation, and instant invoice creation. Integrated Zoho CRM and Zoho Books APIs with real-time webhooks to automate the workflow from requirement capture to payment link delivery.",
-  features: [
-    "React frontend for customer requirement capture",
-    "Flask backend with dynamic pricing logic",
-    "Zoho CRM automated quotation generation",
-    "Zoho Books invoice creation with payment links",
-  ],
-  stack: [
-    "React",
-    "Python",
-    "Flask",
-    "Zoho CRM",
-    "Zoho Books",
-    "REST API",
-    "EC2 Scheduler",
-  ],
-  color: "from-[hsl(280,60%,50%)] to-[hsl(320,70%,50%)]",
-  image: autocityProject,
-  
-},
+}
+
 ];
 
 const ProjectsSection = () => {
@@ -117,7 +103,7 @@ const ProjectsSection = () => {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className={`relative p-8 md:p-12 bg-gradient-to-br ${project.color} min-h-[280px] flex flex-col justify-between overflow-hidden`}>
                   {project.image ? (
-                    <img src={project.image} alt={project.title} className="absolute inset-0 w-full h-full object-cover object-left-top opacity-90" />
+                    <img src={project.image} alt={project.title} className="absolute inset-0 w-full h-full object-cover object-left-top opacity-90 object-position-center" />
                   ) : (
                     <>
                       <div>
@@ -155,11 +141,11 @@ const ProjectsSection = () => {
                     {project.stack.map((s) => (
                       <span key={s} className="badge-pill text-xs">{s}</span>
                     ))}
-                    {project.link && (
+                    {/* {project.link && (
                       <a href={project.link} target="_blank" rel="noopener noreferrer" className="ml-auto flex items-center gap-1.5 text-sm text-primary hover:underline font-medium">
                         <ExternalLink size={14} /> Live Demo
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>
