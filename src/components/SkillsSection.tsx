@@ -39,7 +39,7 @@ const SkillsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
- <section id="skills" className="py-24 md:py-32" ref={ref}>
+ <section id="skills" className="py-0 md:py-0" ref={ref}>
   <div className="section-container">
 
     <motion.div
