@@ -53,8 +53,8 @@ const AboutSection = () => {
 
           <div className="space-y-3">
             {[
-              "HTML",
-              "CSS",
+              "HTML5",
+              "CSS3",
               "JavaScript",
               "React.js",
               "jQuery",

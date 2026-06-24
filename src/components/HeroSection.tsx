@@ -40,11 +40,12 @@ const HeroSection = () => {
       className="inline-flex items-center gap-2 mb-10"
     >
       <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-wider">
-        Available
-      </span>
-      <span className="text-sm text-muted-foreground">
-        Open for Web Design Projects & Freelance
-      </span>
+  Available for Hire
+</span>
+
+<span className="text-sm text-muted-foreground">
+  Open to Frontend & UI/UX Developer Roles
+</span>
       <ArrowRight size={14} className="text-muted-foreground" />
     </motion.div>
 
@@ -70,15 +71,14 @@ const HeroSection = () => {
     </motion.h2>
 
     {/* Description */}
-    <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.7 }}
-      className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-12"
-    >
-      Hello, I'm <span className="text-foreground font-medium">Rozee Shaikh</span>, a Web Designer with 3+ years of experience
-      creating responsive, modern, and user-friendly websites using HTML, CSS, JavaScript, React, and Bootstrap.
-    </motion.p>
+   <motion.p
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.7 }}
+  className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-12"
+>
+  Hello, I'm <span className="text-foreground font-medium">Rozee Shaikh</span>, a Frontend Developer and UI/UX Specialist with 3+ years of experience crafting responsive, accessible, and intuitive web applications using HTML, CSS, SCSS, Bootstrap, Tailwind, JavaScript, and AI-assisted workflows. I focus on bridging design and development to deliver high-quality user experiences.
+</motion.p>
 
     {/* Buttons */}
     <motion.div
