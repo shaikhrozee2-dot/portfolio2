@@ -14,7 +14,7 @@ const HeroSection = () => {
   const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("sohailpathan975@gmail.com");
+    navigator.clipboard.writeText("shaikhrozee2@gmail.com");
     toast.success("Email copied!");
   };
 
