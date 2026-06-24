@@ -34,9 +34,8 @@ const ContactSection = () => {
         </h2>
 
         <p className="text-muted-foreground mb-10 max-w-md leading-relaxed">
-          Have a project in mind? I specialize in designing modern, responsive and user-friendly websites. 
-          Whether you need a portfolio, business website or UI design — let's work together and bring your ideas to life.
-        </p>
+I'm currently open to Frontend and UI/UX Developer opportunities. If you're looking for someone who can build responsive, modern, and user-friendly web applications, I'd be happy to connect.
+</p>
 
         <div className="flex gap-4">
           {[
@@ -95,7 +94,7 @@ const ContactSection = () => {
             required
             rows={4}
             className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border/50 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 transition-colors resize-none"
-            placeholder="Tell me about your project..."
+            placeholder="Write your message..."
           />
         </div>
 
